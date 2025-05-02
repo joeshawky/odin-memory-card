@@ -1,0 +1,9 @@
+.scoreWrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.scoreText {
+    padding: 1rem 3rem;
+    background: white;
+}

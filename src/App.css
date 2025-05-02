@@ -1,0 +1,30 @@
+:root {
+    --animation-duration: 1000ms;
+    --steven: url('https://i.pinimg.com/736x/07/28/ce/0728cea9729e6318c3b209334a1f3dce.jpg');
+}
+
+
+.bg {
+    min-height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.cards {
+    display: grid;
+    padding: 2rem min(3rem, 10%);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+
+@media screen and (min-width: 944px) {
+    .cards {
+        margin-top: 5rem
+    }
+}
+
