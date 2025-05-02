@@ -44,15 +44,15 @@ function App() {
         setIsShuffling(true);
     
         // Flip all cards after delay
-        await wait(200);
+        // await wait(200);
         setCards(prevCards => flipAllCards(prevCards, true));
     
         // Shuffle cards after delay
-        await wait(600);
+        await wait(500);
         setCards(prevCards => shuffleCards(prevCards));
     
         // Unflip and end shuffle
-        await wait(200);
+        await wait(300);
         setCards(prevCards => flipAllCards(prevCards, false));
         setIsShuffling(false);
     };
@@ -79,7 +79,8 @@ function App() {
                         key={idx}
                         idx={idx}
                         onClick={(element) => handleClick(element)}
-                        image={card.flipped ? "cardBack.png" : card.image}
+                        // image={card.flipped ? "cardBack.png" : card.image}
+                        image={card.image}
                         gem={card.gem}
                         value={card.value}
                         isShuffling={isShuffling}/>

@@ -17,6 +17,7 @@ export default function Card({
     let animationFrameId = null;
 
     const handleMouseMovement = (e) => {
+        e
         const index = Number(e.currentTarget.dataset.index);
         const rect = e.currentTarget.getBoundingClientRect();
         const offsetX = e.clientX - rect.left;
@@ -75,8 +76,9 @@ export default function Card({
     );
 
     const gemDiv = gem.includes("garnet") ? doubleGemDiv : singleGemDiv;
+
     return (
-        <div className={`card ${isShuffling && 'startAnimation'}`} onClick={() => onClick(value)} style={{}}>
+        <div className={`card ${isShuffling ? 'startAnimation' : ''}`} onClick={() => onClick(value)}>
             <div
                 className="cardHoverLayer"
                 onMouseMove={handleMouseMovement}
@@ -90,7 +92,7 @@ export default function Card({
                     transform:
                         cardTransforms[idx] ||
                         "rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
-                    backgroundImage: `url(${image})`,
+                    backgroundImage: isShuffling ? `url('cardBack.png')`: `url(${image})`,
                 }}
             >
                 {gemDiv}
