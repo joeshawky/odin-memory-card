@@ -60,8 +60,7 @@
   }
 
   .startAnimation .cardInner {
-    opacity: 0.5;
-    scale: 0.5;
+    scale: 0.75;
     background-image: url('cardBack.png') 
   }
 
