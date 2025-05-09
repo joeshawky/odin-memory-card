@@ -1,12 +1,22 @@
-# React + Vite
+# Memory Card Game (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an interactive memory game built as part of the [React](https://www.theodinproject.com/paths/full-stack-javascript/courses/react) module from The Odin Project’s Full Stack JavaScript curriculum.
 
-Currently, two official plugins are available:
+## ✨ Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Memory Card Game challenges users to click on unique cards without repeating any selections. After each round, the cards are shuffled to increase the difficulty and test the user's memory and focus.
 
-## Expanding the ESLint configuration
+The project emphasizes component-based design, state management with React hooks, and responsive UI implementation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Core Concepts Demonstrated:
+- Functional components and hooks (`useState`, `useEffect`)
+- Component reusability and state-driven rendering
+- Dynamic list mapping and conditional logic
+
+## 📐 Features
+
+- Built entirely in React using functional components
+- Shuffle logic resets card layout after each correct click
+- Real-time score and high score tracking
+- Responsive design for desktop and mobile
+- Clean separation of components and logic
