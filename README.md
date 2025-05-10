@@ -13,6 +13,10 @@ The project emphasizes component-based design, state management with React hooks
 - Component reusability and state-driven rendering
 - Dynamic list mapping and conditional logic
 
+## 🔗 Live Demo
+
+[Click here to try the Memory Card Game](https://joeshawky.github.io/odin-memory-card)
+
 ## 📐 Features
 
 - Built entirely in React using functional components
